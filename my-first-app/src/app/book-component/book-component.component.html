@@ -1,0 +1,5 @@
+<button class="btn btn-primary"
+  (click)="onCreateChapter()">Display Details</button>
+
+<p [ngClass]="status ? 'normal' : 'toggle'">History of Click-events:</p>
+<app-chapter-component *ngFor="let ch of chapters"></app-chapter-component>
